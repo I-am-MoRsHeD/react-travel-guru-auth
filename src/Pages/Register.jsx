@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import fbIcon from '../../public/images/icons/fb.png';
 import gIcon from '../../public/images/icons/google.png';
 import { GoogleAuthProvider, updateProfile } from 'firebase/auth';
-
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Navbar from '../Components/Navbar/Navbar';
 import { AuthContext } from '../Components/AuthContext/AuthProvider';
 
@@ -13,6 +13,7 @@ const Register = () => {
     const provider = new GoogleAuthProvider();
     const [success, setSuccess] = useState('')
     const [error, setError] = useState('')
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -88,7 +89,17 @@ const Register = () => {
                             <input type="email" name="email" placeholder="Email" className="input" required />
                         </div>
                         <div className="form-control border-b-2">
-                            <input type="password" name="password" placeholder="Password" className="input" required />
+                            <input 
+                            type={showPassword? "text" : "password"}
+                             name="password" 
+                             placeholder="Password" 
+                             className="input" required />
+                             <span className='absolute mt-5 md:ml-72 lg:ml-[480px]' onClick={()=>setShowPassword(!showPassword)}>
+                                {
+                                    showPassword ? <FaEyeSlash></FaEyeSlash> :
+                                    <FaEye></FaEye>
+                                }
+                             </span>
                         </div>
                         <div className='flex justify-between mt-4'>
                             <div>
