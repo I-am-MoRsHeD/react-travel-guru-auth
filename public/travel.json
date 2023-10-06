@@ -1,0 +1,23 @@
+
+
+[
+    {
+      "id": 1,
+      "title": "Sajek",
+      "details": "Experience the magic of our secluded island retreat. Surrounded by lush greenery and crystal-clear waters, this paradise offers relaxation and adventure in equal measure. Explore hidden waterfalls, indulge in delicious local cuisine, and unwind in luxurious beachfront villas.",
+      "image_url": "https://i.ibb.co/pfw3CQ9/Sajek.png"
+    },
+    {
+      "id": 2,
+      "title": "Sree-Mongol",
+      "details": "Nestled high up in the misty mountains, this lodge offers breathtaking panoramic views of the surrounding valleys. Embark on guided nature hikes, visit ancient temples, and savor the flavors of mountain cuisine. Cozy up in our rustic cabins and let the tranquility of nature rejuvenate your soul.",
+      "image_url": "https://i.ibb.co/s5R4L91/Sreemongol.png"
+    },
+    {
+      "id": 3,
+      "title": "Sundorbhan",
+      "details": "Indulge in the ultimate beachfront experience at Sunset Beach Oasis. Enjoy golden sunsets, soft sandy beaches, and the gentle sound of waves. Participate in thrilling water sports, savor delectable seafood, and relish the vibrant beach nightlife. Our luxurious beachfront suites ensure a perfect stay by the sea.",
+      "image_url": "https://i.ibb.co/dDJV3PH/sundorbon.png"
+    }
+  ]
+  
