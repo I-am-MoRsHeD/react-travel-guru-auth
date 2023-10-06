@@ -1,15 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Slider from 'react-slick';
 
 const TravelCard = ({ news }) => {
     const { id, image_url, title, details } = news;
 
 
     return (
-        <div className='flex my-10 items-center gap-10 justify-between px-10'>
-            <div className='space-y-3'>
+        <div 
+        style={{backgroundImage: `url(${image_url})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', width: '80%'}}
+        className={`flex my-10 items-center gap-10 justify-between px-10`}>
+            <div className=' '>
                 <h1 className="text-4xl font-bold">{title}</h1>
                 <p className="text-lg">{details}</p>
                 <Link to={`/travel/${id}`}>

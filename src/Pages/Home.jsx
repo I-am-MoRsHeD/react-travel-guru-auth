@@ -8,8 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
-
     const news = useLoaderData();
+
     const settings = {
         dots: true,
         infinite: true,
@@ -18,9 +18,9 @@ const Home = () => {
         slidesToScroll: 1
     };
     return (
-        <div>
+        <div className=''>
             <Navbar></Navbar>
-            <div className=''>
+            <div>
                 <Slider {...settings}>
                     {
                         news.map(data => <TravelCard
